@@ -8,8 +8,7 @@ Ubuntu-based Docker image with a bunch of networking tools and a trivial HTTP se
 - dig
 - hey 
 - host
-- hostname 
-- hostnamectl
+- hostname
 - ip
 - lsof
 - netcat
@@ -27,18 +26,18 @@ Ubuntu-based Docker image with a bunch of networking tools and a trivial HTTP se
 ## Usage
 
 ```sh
-docker run --rm -it ttulka/networking bash
+$ docker run --rm -it ttulka/networking bash
 ```
 
 
 ```sh
-docker run -d -p 8080:80 ttulka/networking
-
-curl localhost:80
+$ docker run --rm -d -p 8080:80 ttulka/networking
+$ curl localhost:80
+hello
 ```
 
 ## Build 
 
 ```sh
-docker build --tag ttulka/networking .
+docker build --tag ttulka/networking:0.1 .
 ```
