@@ -31,8 +31,8 @@ $ docker run --rm -it ttulka/networking bash
 
 
 ```sh
-$ docker run --rm -d -p 8080:80 ttulka/networking
-$ curl localhost:80
+$ docker run --rm -d -p 8080:8080 ttulka/networking
+$ curl localhost:8080
 hello
 ```
 
