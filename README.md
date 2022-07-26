@@ -31,13 +31,13 @@ $ docker run --rm -it ttulka/networking bash
 
 
 ```sh
-$ docker run --rm -d -p 8080:8080 ttulka/networking
-$ curl localhost:8080
-hello
+$ docker run --rm -d -p 80:8080 -e MESSAGE=world ttulka/networking
+$ curl localhost:80
+hello world
 ```
 
 ## Build 
 
 ```sh
-docker build --tag ttulka/networking:0.1 .
+docker build --tag ttulka/networking:latest .
 ```
